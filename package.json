@@ -1,10 +1,10 @@
 {
-  "name": "@peculiar/webcrypto",
+  "name": "@blockcerts/webcrypto",
   "version": "1.5.0",
-  "description": "A WebCrypto Polyfill for NodeJS",
+  "description": "A WebCrypto Polyfill for NodeJS (blockcerts fork) - DO NOT USE IN PRODUCTION",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PeculiarVentures/webcrypto.git"
+    "url": "https://github.com/blockchain-certificates/webcrypto.git"
   },
   "files": [
     "build/**/*.{ts,js}",
