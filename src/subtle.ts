@@ -31,10 +31,10 @@ export class SubtleCrypto extends core.SubtleCrypto {
     //#endregion
 
     //#region DES
-    const ciphers = crypto.getCiphers();
-    if (ciphers.includes("des-cbc")) {
-      this.providers.set(new DesCbcProvider());
-    }
+    // const ciphers = crypto.getCiphers();
+    // if (ciphers.includes("des-cbc")) {
+    //   this.providers.set(new DesCbcProvider());
+    // }
     this.providers.set(new DesEde3CbcProvider());
     //#endregion
 
@@ -77,16 +77,16 @@ export class SubtleCrypto extends core.SubtleCrypto {
       //#endregion
     }
 
-    const hashes = crypto.getHashes();
-    if (hashes.includes("sha3-256")) {
-      this.providers.set(new Sha3256Provider());
-    }
-    if (hashes.includes("sha3-384")) {
-      this.providers.set(new Sha3384Provider());
-    }
-    if (hashes.includes("sha3-512")) {
-      this.providers.set(new Sha3512Provider());
-    }
+    // const hashes = crypto.getHashes();
+    // if (hashes.includes("sha3-256")) {
+    //   this.providers.set(new Sha3256Provider());
+    // }
+    // if (hashes.includes("sha3-384")) {
+    //   this.providers.set(new Sha3384Provider());
+    // }
+    // if (hashes.includes("sha3-512")) {
+    //   this.providers.set(new Sha3512Provider());
+    // }
 
     if (nodeMajorVersion && parseInt(nodeMajorVersion, 10) >= 14) {
       //#region EdDSA
